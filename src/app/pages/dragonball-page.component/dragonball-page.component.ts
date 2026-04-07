@@ -6,7 +6,7 @@ import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
   templateUrl: './dragonball-page.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class DragonballPageComponent {
+export default class DragonballPageComponent {
   name = signal('');
   power = signal(0);
 

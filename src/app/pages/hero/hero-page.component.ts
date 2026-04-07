@@ -6,7 +6,7 @@ import { ChangeDetectionStrategy, Component, computed, signal } from '@angular/c
   templateUrl: './hero-page.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HeroPageComponent {
+export default class HeroPageComponent {
   name = signal('Ironman');
   age = signal(45);
 
