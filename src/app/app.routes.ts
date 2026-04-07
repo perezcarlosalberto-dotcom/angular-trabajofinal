@@ -18,4 +18,12 @@ export const routes: Routes = [
     path: 'dragonball-super',
     loadComponent: () => import('./pages/dragonball-super/dragonball-super')
   },
+  {
+    path: 'users',
+    loadChildren: () => import('./pages/user/user.routes'),
+  },
+  {
+    path: '**',
+    redirectTo: ''
+  }
 ];
