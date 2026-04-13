@@ -23,6 +23,10 @@ export const routes: Routes = [
     loadChildren: () => import('./pages/user/user.routes'),
   },
   {
+    path: 'vehiculos',
+    loadChildren: () => import('./pages/vehiculos/vehiculos.routes')
+  },
+  {
     path: '**',
     redirectTo: ''
   }

@@ -71,5 +71,32 @@
       "role": "ADMIN"
     }
   ],
+  "vehiculos": [
+    {
+      "id": "1",
+      "marca": "Toyota",
+      "modelo": "Corolla",
+      "anio": 2020,
+      "color": "Rojo",
+      "precio": 20000
+    },
+    {
+      "id": "2",
+      "marca": "Honda",
+      "modelo": "Civic",
+      "anio": 2019,
+      "color": "Azul",
+      "precio": 22000
+    },
+    {
+      "id": "3",
+      "marca": "Ford",
+      "modelo": "Mustang",
+      "anio": 2021,
+      "color": "Negro",
+      "precio": 30000
+    }
+  ],
+
   "$schema": "./node_modules/json-server/schema.json"
 }
