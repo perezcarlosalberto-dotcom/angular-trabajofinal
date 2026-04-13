@@ -24,7 +24,7 @@ public vehiculo$: Observable<Vehiculo[]> = this.vehiculosService.getVehiculos().
 )));
 public isDeleting = signal<number | null>(null);
 
-onAddUser(): void {
+onAddVehiculo(): void {
   this.router.navigate(['/vehiculos/create-vehiculo']);
 }
 
