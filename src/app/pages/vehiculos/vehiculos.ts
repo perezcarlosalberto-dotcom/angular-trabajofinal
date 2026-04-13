@@ -1,8 +1,9 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import VehiculoList from "../../components/vehiculos/vehiculos-list/vehiculos-list";
 
 @Component({
   selector: 'app-vehiculos',
-  imports: [],
+  imports: [VehiculoList],
   templateUrl: './vehiculos.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

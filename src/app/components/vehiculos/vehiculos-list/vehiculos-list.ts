@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/cor
 import { Router } from '@angular/router';
 import { Observable, map } from 'rxjs';
 import { AsyncPipe, TitleCasePipe } from '@angular/common';
-import { VehiculoService } from '../../../services/vehiculos.service';
+import { VehiculosService } from '../../../services/vehiculos.service';
 import { Vehiculo } from '../../../interfaces/vehiculos.interface';
 
 @Component({
@@ -12,10 +12,10 @@ import { Vehiculo } from '../../../interfaces/vehiculos.interface';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export default class VehiculoList { 
-private vehiculoService = inject(VehiculoService);
+private vehiculosService = inject(VehiculosService);
 private router = inject(Router);
 
-public vehiculo$: Observable<Vehiculo[]> = this.vehiculoService.getVehiculos().pipe(
+public vehiculo$: Observable<Vehiculo[]> = this.vehiculosService.getVehiculos().pipe(
   map((vehiculos: Vehiculo[]) => vehiculos.sort((a, b) => {
     const idA = typeof a.id === 'string' ? parseInt(a.id, 10) : a.id;
     const idB = typeof b.id === 'string' ? parseInt(b.id, 10) : b.id;
